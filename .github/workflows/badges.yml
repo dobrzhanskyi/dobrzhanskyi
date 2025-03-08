@@ -2,9 +2,8 @@ name: Update badges
 
 on:
   schedule:
-    # Runs at 2am UTC
     - cron: "0 2 * * *"
-  workflow_dispatch: # Allows manual execution
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -14,4 +13,5 @@ jobs:
       - name: Badges - Readme
         uses: pemtajo/badge-readme@main
         with:       
-          CREDLY_USER: volodymyr-dobrzhanskyi # optional, but default will use the same from github
+          CREDLY_USER: volodymyr-dobrzhanskyi
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the Personal Access Token
