@@ -1,6 +1,7 @@
 ## Hi there 👋
 
 <!--START_SECTION:badges-->
+[![AWS Knowledge: Compute](https://images.credly.com/size/110x110/images/eba18772-5ecf-471b-b8af-dda79815b544/image.png)](http://www.credly.com/badges/7ad141f5-f2c9-43b7-ab01-35ffad28399a "AWS Knowledge: Compute")
 [![Use APIs to Work with Cloud Storage Skill Badge](https://images.credly.com/size/110x110/images/0c6a247d-8bbd-407b-8f83-dd863d251587/image.png)](http://www.credly.com/badges/7b00cbea-d522-4093-9a6e-58d4dd25ebd6 "Use APIs to Work with Cloud Storage Skill Badge")
 [![Enterprise Design Thinking - Team Essentials for AI](https://images.credly.com/size/110x110/images/09f644d1-eed2-4279-bc49-1e26cddc9d3d/Team_Essentials.png)](http://www.credly.com/badges/40decdcf-0ce2-4a7e-9c79-e375cfd1fc7a "Enterprise Design Thinking - Team Essentials for AI")
 [![Enterprise Design Thinking Co-Creator](https://images.credly.com/size/110x110/images/2700b813-82b8-4232-9b36-5dcd5cd24584/Badges_v8-08_Co-Creator.png)](http://www.credly.com/badges/d79bb1d6-5a6c-449e-b55f-ebf02a4abfa9 "Enterprise Design Thinking Co-Creator")
