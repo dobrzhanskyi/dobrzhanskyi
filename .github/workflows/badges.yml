@@ -1,17 +1,30 @@
-name: Update badges
+name: Update Credly Badges
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 9 * * 1" # Every Monday at 9 AM UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update-readme:
-    name: Update Readme with badges
+  update-badges:
     runs-on: ubuntu-latest
     steps:
-      - name: Badges - Readme
-        uses: pemtajo/badge-readme@main
-        with:       
-          CREDLY_USER: volodymyr-dobrzhanskyi
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the Personal Access Token
+      - uses: actions/checkout@v7
+
+      - name: Update Credly badges
+        uses: Sagargupta16/credly-badge-readme-action@v1
+        with:
+          credly-username: "volodymyr-dobrzhanskyi"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update Credly badges"
+            git push
+          fi
